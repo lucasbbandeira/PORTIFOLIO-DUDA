@@ -1,0 +1,8 @@
+Coloque nesta pasta os vídeos da cliente.
+
+Formatos recomendados:
+- .mp4 para vídeos verticais e horizontais
+- 1080x1920 para Reels, TikTok e UGC
+- 1920x1080 para vídeos horizontais
+
+Os vídeos serão adicionados ao site nas próximas versões.
