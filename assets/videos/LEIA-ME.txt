@@ -1,8 +1,15 @@
-Coloque nesta pasta os vídeos da cliente.
+PASTA RESERVADA PARA OS VÍDEOS DA VERSÃO FINAL
+
+Sugestão de organização:
+- viagens/: vídeos por país
+- moda/: looks, GRWM, produtos e editoriais
+- ugc/: uma pasta por marca confirmada
+- hotelaria/: uma pasta por hospedagem confirmada
 
 Formatos recomendados:
-- .mp4 para vídeos verticais e horizontais
-- 1080x1920 para Reels, TikTok e UGC
-- 1920x1080 para vídeos horizontais
+- Vídeos verticais: 9:16, MP4 (H.264), preferencialmente até 12 MB
+- Vídeos horizontais: 16:9, MP4 (H.264), preferencialmente até 20 MB
+- Criar uma imagem de capa para cada vídeo
+- Não usar autoplay com áudio
 
-Os vídeos serão adicionados ao site nas próximas versões.
+Os vídeos serão colocados somente depois da aprovação da estrutura.

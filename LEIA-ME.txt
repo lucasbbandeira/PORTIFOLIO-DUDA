@@ -1,0 +1,31 @@
+DIÁRIO DA DUDA — MODELO 2
+
+COMO ABRIR
+1. Extraia todo o arquivo ZIP.
+2. Abra a pasta extraída no Visual Studio Code.
+3. Abra index.html com a extensão Live Server ou diretamente no navegador.
+
+ESTRUTURA
+- index.html: página inicial
+- viagens.html: dez países confirmados
+- moda.html: Moda & Lifestyle
+- ugc.html: projetos clicáveis com janela de detalhes
+- hotelaria.html: vitrine de experiências
+- hotelaria-projeto.html: modelo de estudo de caso e Outros Projetos
+- parcerias.html: marcas confirmadas
+- sobre.html: apresentação da Duda
+- css/style.css: todo o visual
+- js/script.js: menu, filtros e janela UGC
+- assets/images: fotografias
+- assets/videos: vídeos que serão adicionados depois
+
+IMPORTANTE
+Os nomes de marcas, hotéis, campanhas, cidades, resultados e depoimentos estão
+propositalmente vazios. O portfólio só deverá receber informações verdadeiras e
+confirmadas. Os avisos visíveis fazem parte desta versão de apresentação.
+
+CONTATO USADO NO SITE
+Instagram: https://www.instagram.com/diaariodaduda/
+TikTok: https://www.tiktok.com/@diaariodaduda?lang=pt-BR
+E-mail: dudabb2003@gmail.com
+WhatsApp não foi incluído.
