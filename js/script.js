@@ -66,3 +66,65 @@ ugcModal?.addEventListener("click", (event) => {
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeUgcModal();
 });
+
+const homeVideoModal = document.querySelector("[data-home-video-modal]");
+const homeVideoPlayer = document.querySelector("[data-home-video-player]");
+const homeVideoCategory = document.querySelector("[data-home-video-category]");
+const homeVideoTitle = document.querySelector("[data-home-video-title]");
+const homeVideoDescription = document.querySelector("[data-home-video-description]");
+
+function closeHomeVideo() {
+  if (!homeVideoModal || !homeVideoPlayer) return;
+  homeVideoPlayer.pause();
+  homeVideoPlayer.removeAttribute("src");
+  homeVideoPlayer.load();
+  homeVideoModal.hidden = true;
+  document.body.classList.remove("modal-open");
+}
+
+document.querySelectorAll("[data-video-src]").forEach((button) => {
+  button.addEventListener("click", () => {
+    if (!homeVideoModal || !homeVideoPlayer || !homeVideoCategory || !homeVideoTitle || !homeVideoDescription) return;
+    homeVideoPlayer.src = button.dataset.videoSrc;
+    homeVideoPlayer.poster = button.dataset.videoPoster || "";
+    homeVideoCategory.textContent = button.dataset.videoCategory || "";
+    homeVideoTitle.textContent = button.dataset.videoTitle || "";
+    homeVideoDescription.textContent = button.dataset.videoDescription || "";
+    homeVideoModal.hidden = false;
+    document.body.classList.add("modal-open");
+    homeVideoModal.querySelector("[data-home-video-close]")?.focus();
+    homeVideoPlayer.play().catch(() => {});
+  });
+});
+
+document.querySelectorAll("[data-home-video-close]").forEach((button) => {
+  button.addEventListener("click", closeHomeVideo);
+});
+
+homeVideoModal?.addEventListener("click", (event) => {
+  if (event.target === homeVideoModal) closeHomeVideo();
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeHomeVideo();
+});
+
+document.querySelectorAll("[data-copy-coupon]").forEach((button) => {
+  button.addEventListener("click", async () => {
+    const coupon = button.dataset.copyCoupon;
+    if (!coupon) return;
+    try {
+      await navigator.clipboard.writeText(coupon);
+    } catch {
+      const field = document.createElement("textarea");
+      field.value = coupon;
+      document.body.appendChild(field);
+      field.select();
+      document.execCommand("copy");
+      field.remove();
+    }
+    const originalLabel = button.textContent;
+    button.textContent = "CUPOM COPIADO ✓";
+    window.setTimeout(() => { button.textContent = originalLabel; }, 2200);
+  });
+});

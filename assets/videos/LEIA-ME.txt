@@ -1,4 +1,12 @@
-PASTA RESERVADA PARA OS VÍDEOS DA VERSÃO FINAL
+VÍDEOS SELECIONADOS PARA A HOME
+
+- verona-italia.mp4
+- look-bariloche.mp4
+- tour-curitiba.mp4
+- hostels-europa.mp4
+- omeuchip.mp4
+
+As capas correspondentes estão em assets/posters.
 
 Sugestão de organização:
 - viagens/: vídeos por país
@@ -12,4 +20,4 @@ Formatos recomendados:
 - Criar uma imagem de capa para cada vídeo
 - Não usar autoplay com áudio
 
-Os vídeos serão colocados somente depois da aprovação da estrutura.
+Novos vídeos podem ser adicionados depois, mantendo a mesma organização.
