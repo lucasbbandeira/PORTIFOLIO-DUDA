@@ -41,9 +41,19 @@ filterButtons.forEach((button) => {
 
 const ugcModal = document.querySelector("[data-ugc-modal]");
 const ugcTitle = document.querySelector("[data-ugc-title]");
+const ugcVideo = document.querySelector("[data-ugc-video]");
+const ugcBrand = document.querySelector("[data-ugc-brand]");
+const ugcFormat = document.querySelector("[data-ugc-format]");
+const ugcDescription = document.querySelector("[data-ugc-description]");
 
 function closeUgcModal() {
   if (!ugcModal) return;
+  if (ugcVideo) {
+    ugcVideo.pause();
+    ugcVideo.removeAttribute("src");
+    ugcVideo.removeAttribute("poster");
+    ugcVideo.load();
+  }
   ugcModal.hidden = true;
   document.body.classList.remove("modal-open");
 }
@@ -51,10 +61,19 @@ function closeUgcModal() {
 document.querySelectorAll("[data-ugc-open]").forEach((button) => {
   button.addEventListener("click", () => {
     if (!ugcModal || !ugcTitle) return;
-    ugcTitle.textContent = button.dataset.ugcOpen;
+    ugcTitle.textContent = button.dataset.title || "Conteúdo UGC";
+    if (ugcBrand) ugcBrand.textContent = button.dataset.brand || "";
+    if (ugcFormat) ugcFormat.textContent = button.dataset.format || "";
+    if (ugcDescription) ugcDescription.textContent = button.dataset.description || "";
+    if (ugcVideo) {
+      ugcVideo.src = button.dataset.src || "";
+      ugcVideo.poster = button.dataset.poster || "";
+      ugcVideo.load();
+    }
     ugcModal.hidden = false;
     document.body.classList.add("modal-open");
     ugcModal.querySelector("[data-ugc-close]")?.focus();
+    ugcVideo?.play().catch(() => {});
   });
 });
 

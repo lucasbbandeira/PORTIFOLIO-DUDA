@@ -158,8 +158,12 @@
 .travel-honest-card p { margin: .35rem 0 0; color: rgba(38,38,34,.58); font-size: .56rem; line-height: 1.55; }
 
 .travel-commercial-bridge { display: grid; grid-template-columns: .85fr 1.15fr; margin: 0; padding: clamp(5rem,8vw,8rem) 6vw; background: var(--travel-white); color: white; }
-.travel-commercial-media { position: relative; min-height: 600px; overflow: hidden; border-radius: 24px 0 0 24px; }
+.travel-commercial-media { position: relative; min-height: 600px; overflow: hidden; padding: 0; border: 0; border-radius: 24px 0 0 24px; background: #1c1916; color: white; cursor: pointer; }
 .travel-commercial-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.travel-commercial-shade { position: absolute; inset: 0; z-index: 1; background: linear-gradient(0deg,rgba(18,14,12,.78),rgba(18,14,12,.08) 62%); }
+.travel-commercial-label { position: absolute; z-index: 2; right: 1.2rem; bottom: 1.2rem; left: 1.2rem; font: 700 .52rem var(--body); letter-spacing: .14em; text-align: left; }
+.travel-commercial-media .travel-play { z-index: 2; transition: background .2s,transform .2s; }
+.travel-commercial-media:hover .travel-play,.travel-commercial-media:focus-visible .travel-play { background: var(--travel-clay); transform: translate(-50%,-50%) scale(1.08); }
 .travel-commercial-copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(3rem,7vw,7rem); border-radius: 0 24px 24px 0; background: var(--travel-olive); }
 .travel-commercial-copy .eyebrow { margin-top: 2.5rem; color: #d9b29f; }
 .travel-commercial-copy h2 { margin: .8rem 0 1.5rem; font-family: var(--travel-serif); font-size: clamp(4rem,6vw,7rem); font-weight: 500; letter-spacing: -.04em; line-height: .84; }
@@ -218,6 +222,14 @@
   .travel-video-dialog video { max-height: 70svh; }
   .travel-video-dialog > div { padding: 2rem 1.2rem; }
   .travel-video-dialog h3 { font-size: 3.8rem; }
+}
+
+@media (max-width: 460px) {
+  .travel-cinematic,.travel-atlas,.travel-guides,.travel-leads,.italy-chapter,.travel-atmosphere,.travel-commercial-bridge { padding-right: .85rem; padding-left: .85rem; }
+  .travel-cinematic-copy h1,.travel-section-heading h2,.italy-chapter-title h2,.travel-atmosphere-copy h2,.travel-commercial-copy h2 { font-size: clamp(3.4rem,16vw,4.8rem); overflow-wrap: anywhere; }
+  .travel-story-copy { right: 1rem; left: 1rem; }
+  .travel-story-copy strong { font-size: clamp(2.55rem,12vw,3.6rem); }
+  .travel-commercial-copy { padding: 3.2rem 1rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

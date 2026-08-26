@@ -438,3 +438,58 @@ img { display: block; max-width: 100%; }
   .footer.footer-redesign { grid-template-columns: 1fr; padding-right: 1rem; padding-left: 1rem; }
   .footer-redesign .footer-legal { align-items: flex-start; flex-direction: column; gap: .7rem; }
 }
+
+/* UGC real + correção responsiva */
+.ugc-showcase-static .split-head>p { color: rgba(255,255,255,.58); }
+.ugc-brand-list { display: grid; margin-top: 4rem; gap: clamp(5rem,9vw,9rem); }
+.ugc-brand-chapter { scroll-margin-top: 90px; }
+.ugc-brand-heading { display: grid; grid-template-columns: minmax(260px,.55fr) 1.45fr; margin-bottom: 2.5rem; border: 1px solid rgba(255,255,255,.17); }
+.ugc-brand-logo { display: grid; min-height: 210px; place-items: center; padding: 2rem; border-right: 1px solid rgba(255,255,255,.17); background: white; }
+.ugc-brand-chapter.tour .ugc-brand-logo { background: #0060ad; }
+.ugc-brand-logo img { width: min(88%,350px); max-height: 94px; object-fit: contain; }
+.ugc-brand-chapter.fotoregistro .ugc-brand-logo img { width: min(78%,310px); }
+.ugc-brand-heading>div:last-child { display: flex; min-width: 0; flex-direction: column; justify-content: center; padding: clamp(2rem,4vw,4rem); }
+.ugc-brand-heading>div:last-child>span { color: #d9b29f; font-size: .56rem; font-weight: 700; letter-spacing: .16em; }
+.ugc-brand-heading h3 { margin: .65rem 0 1rem; font: 400 clamp(4.2rem,8vw,8rem)/.8 var(--display); }
+.ugc-brand-heading p { max-width: 720px; margin: 0; color: rgba(255,255,255,.6); font-size: .74rem; line-height: 1.75; }
+.ugc-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.ugc-card>span { min-height: 1.2rem; }
+.ugc-media { position: relative; overflow: hidden; background: #171411; }
+.ugc-media>img { width: 100%; height: 100%; object-fit: cover; transition: transform .45s,filter .3s; }
+.ugc-media::after { position: absolute; inset: 0; content: ""; background: linear-gradient(0deg,rgba(17,12,10,.84),rgba(17,12,10,.08) 58%); }
+.ugc-media i { position: absolute; z-index: 2; top: 50%; left: 50%; width: 62px; height: 62px; border: 1px solid rgba(255,255,255,.7); border-radius: 50%; background: rgba(21,15,13,.16); transform: translate(-50%,-50%); backdrop-filter: blur(8px); }
+.ugc-media i::after { display: block; width: 0; height: 0; margin: 21px 0 0 25px; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-left: 12px solid white; content: ""; }
+.ugc-media small { position: absolute; z-index: 2; right: 1rem; bottom: 1rem; left: 1rem; margin: 0; opacity: 1; font-weight: 700; }
+.ugc-card:hover .ugc-media>img,.ugc-card:focus-visible .ugc-media>img { transform: scale(1.035); filter: saturate(1.06); }
+.ugc-card h3 { font-size: clamp(1.9rem,3vw,3rem); line-height: .92; }
+.ugc-dialog-media { display: block; min-height: 0; background: #070707; }
+.ugc-dialog-media video { display: block; width: 100%; height: 100%; min-height: 680px; max-height: 92vh; object-fit: contain; }
+.partner-action { display: flex; align-items: center; justify-content: space-between; margin-top: 1.4rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--terracotta-deep); font-size: .56rem; font-weight: 700; letter-spacing: .13em; }
+.partner-action.muted { color: rgba(36,29,26,.42); }
+
+html,body { width: 100%; max-width: 100%; overflow-x: clip; }
+body,main,header,footer,section,nav,div { min-width: 0; }
+main,.header { width: 100%; }
+
+@media (max-width:720px) {
+  .page-intro { min-height: auto; padding: 4.25rem 1rem 3.5rem; }
+  .page-intro h1 { max-width: 100%; font-size: clamp(4.8rem,28vw,7.5rem); overflow-wrap: anywhere; }
+  .page-description,.services,.split-head,.ugc-brand-heading,.content-title { width: 100%; max-width: 100%; }
+  .services strong { font-size: clamp(1.35rem,7vw,2rem); }
+  .ugc-brand-heading { grid-template-columns: 1fr; }
+  .ugc-brand-logo { min-height: 170px; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.17); }
+  .ugc-showcase-static .split-head h2,.ugc-brand-heading h3,.content-title h2 { max-width: 100%; font-size: clamp(3.7rem,18vw,5.7rem); overflow-wrap: anywhere; }
+  .ugc-grid { grid-template-columns: 1fr; }
+  .ugc-card h3 { font-size: clamp(2.1rem,11vw,3rem); }
+  .ugc-dialog-media video { min-height: 0; max-height: 68vh; }
+  .ugc-dialog-copy h2 { font-size: clamp(3.2rem,15vw,4.8rem); overflow-wrap: anywhere; }
+  .field { grid-template-columns: 1fr; gap: .45rem; }
+  .fashion-cover h2 { font-size: clamp(4.7rem,24vw,7rem); overflow-wrap: anywhere; }
+}
+
+@media (max-width:420px) {
+  .header { padding-right: .75rem; padding-left: .75rem; }
+  .brand { font-size: 1.2rem; }
+  .page-intro,.section,.ugc-showcase-static { padding-right: .85rem; padding-left: .85rem; }
+  .page-description { font-size: .82rem; }
+}

@@ -1,4 +1,4 @@
-DIÁRIO DA DUDA — MODELO 8 / CAPA DA EUROTRIP EM ALTA QUALIDADE
+DIÁRIO DA DUDA — MODELO 9 / UGC REAL E CELULAR CORRIGIDO
 
 COMO ABRIR
 1. Extraia todo o arquivo ZIP.
@@ -7,9 +7,9 @@ COMO ABRIR
 
 ESTRUTURA
 - index.html: página inicial
-- viagens.html: capítulo editorial com dez países confirmados e vídeos selecionados
+- viagens.html: capítulo editorial com nove países e registros selecionados
 - moda.html: Moda & Estilo de vida
-- ugc.html: projetos clicáveis com janela de detalhes
+- ugc.html: seis vídeos reais da Tour Curitiba e FotoRegistro
 - hotelaria.html: vitrine de experiências
 - hotelaria-projeto.html: modelo de estudo de caso e Outros Projetos
 - parcerias.html: FotoRegistro, Tour Curitiba e Real Seguro Viagem
@@ -18,7 +18,7 @@ ESTRUTURA
 - css/travel.css: direção editorial exclusiva da página de Viagens
 - js/script.js: menu, filtros, janelas de vídeo, janela UGC e botão de copiar cupom
 - assets/images: fotografias
-- assets/videos: vídeos usados na Home e na página de Viagens
+- assets/videos: vídeos usados na Home, em Viagens e nos projetos UGC
 - assets/posters: capas otimizadas dos vídeos
 
 QUALIDADE DOS VÍDEOS
@@ -26,15 +26,15 @@ Os vídeos deste pacote preservam a resolução e a qualidade dos arquivos origi
 Não foi aplicado redimensionamento nem compressão destrutiva. Por esse motivo, o
 arquivo ZIP é maior do que o Modelo 6, mas a imagem fica muito mais nítida.
 
-CAPA DA EUROTRIP
-A miniatura borrada foi substituída por uma cena clara e estável do próprio vídeo.
-A nova capa possui 1080 x 1920 pixels. Ao clicar nela, o vídeo completo continua
-abrindo normalmente.
+CAPAS DOS VÍDEOS
+As capas dos seis novos conteúdos UGC foram escolhidas manualmente em cenas reais,
+exportadas em 1080 x 1920 pixels e tratadas para aparecerem nítidas. Ao clicar,
+o vídeo original abre normalmente, sem usar uma miniatura automática borrada.
 
 IMPORTANTE
 As marcas FotoRegistro, Tour Curitiba e Real Seguro Viagem foram registradas como
-parcerias confirmadas. Formatos, campanhas, resultados e depoimentos continuam
-propositalmente vazios até a confirmação dessas informações.
+parcerias confirmadas. Os vídeos da Tour Curitiba e FotoRegistro são reais.
+Resultados e depoimentos permanecem ausentes até existir comprovação.
 
 A O Meu Chip aparece somente como indicação com link de afiliada e cupom
 DIAARIODADUDA. Ela não é apresentada como parceria oficial.
@@ -53,10 +53,16 @@ VÍDEOS EM VIAGENS
 - Descoberta cultural: Museu do Louvre
 - Cenas de atmosfera: Suíça e Vaticano
 
-O Paraguai permanece apresentado como destino realmente visitado, com aviso
-transparente de que os registros ainda não foram selecionados para esta edição.
-Tour Curitiba aparece como parceria de turismo confirmada. Os demais destinos
+VÍDEOS EM UGC
+- Tour Curitiba: experiência com benefícios, fondue no Château de Gazon e dica gastronômica
+- FotoRegistro: produtos personalizados, abertura de recebidos e álbum de viagem
+
+Tour Curitiba aparece como parceria gastronômica confirmada. Os demais destinos
 não são apresentados como viagens patrocinadas.
+
+CELULAR
+As páginas foram ajustadas para ocupar toda a largura disponível, sem faixa vazia
+lateral, rolagem horizontal ou títulos ultrapassando a tela.
 
 IDENTIDADE VISUAL
 - Fundo principal: marfim claro
