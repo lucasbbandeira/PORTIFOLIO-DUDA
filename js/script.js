@@ -29,7 +29,10 @@ const destinations = document.querySelectorAll("[data-destination]");
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const region = button.dataset.filter;
-    filterButtons.forEach((item) => item.classList.toggle("active", item === button));
+    filterButtons.forEach((item) => {
+      item.classList.toggle("active", item === button);
+      item.classList.toggle("is-active", item === button);
+    });
     destinations.forEach((card) => {
       card.hidden = region !== "Todos" && card.dataset.destination !== region;
     });

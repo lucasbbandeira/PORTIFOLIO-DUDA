@@ -1,4 +1,4 @@
-DIÁRIO DA DUDA — MODELO 5 / HOME FINALIZADA
+DIÁRIO DA DUDA — MODELO 8 / CAPA DA EUROTRIP EM ALTA QUALIDADE
 
 COMO ABRIR
 1. Extraia todo o arquivo ZIP.
@@ -7,18 +7,29 @@ COMO ABRIR
 
 ESTRUTURA
 - index.html: página inicial
-- viagens.html: dez países confirmados
+- viagens.html: capítulo editorial com dez países confirmados e vídeos selecionados
 - moda.html: Moda & Estilo de vida
 - ugc.html: projetos clicáveis com janela de detalhes
 - hotelaria.html: vitrine de experiências
 - hotelaria-projeto.html: modelo de estudo de caso e Outros Projetos
 - parcerias.html: FotoRegistro, Tour Curitiba e Real Seguro Viagem
 - sobre.html: apresentação da Duda
-- css/style.css: todo o visual
+- css/style.css: identidade visual geral
+- css/travel.css: direção editorial exclusiva da página de Viagens
 - js/script.js: menu, filtros, janelas de vídeo, janela UGC e botão de copiar cupom
 - assets/images: fotografias
-- assets/videos: cinco vídeos usados na Home
-- assets/posters: capas dos vídeos
+- assets/videos: vídeos usados na Home e na página de Viagens
+- assets/posters: capas otimizadas dos vídeos
+
+QUALIDADE DOS VÍDEOS
+Os vídeos deste pacote preservam a resolução e a qualidade dos arquivos originais.
+Não foi aplicado redimensionamento nem compressão destrutiva. Por esse motivo, o
+arquivo ZIP é maior do que o Modelo 6, mas a imagem fica muito mais nítida.
+
+CAPA DA EUROTRIP
+A miniatura borrada foi substituída por uma cena clara e estável do próprio vídeo.
+A nova capa possui 1080 x 1920 pixels. Ao clicar nela, o vídeo completo continua
+abrindo normalmente.
 
 IMPORTANTE
 As marcas FotoRegistro, Tour Curitiba e Real Seguro Viagem foram registradas como
@@ -35,11 +46,24 @@ VÍDEOS NA HOME
 - Hostels na Europa: experiência pessoal, sem parceria com hospedagens
 - OMeuChip: conteúdo autoral com link de afiliada
 
+VÍDEOS EM VIAGENS
+- Abertura: Eurotrip por França, Itália, Espanha e Portugal
+- Destaques: Chile, Bariloche, Madri, Porto e Santa Catarina
+- Capítulo Itália: Verona, Toscana, Ligúria e Santa Maria Novella
+- Descoberta cultural: Museu do Louvre
+- Cenas de atmosfera: Suíça e Vaticano
+
+O Paraguai permanece apresentado como destino realmente visitado, com aviso
+transparente de que os registros ainda não foram selecionados para esta edição.
+Tour Curitiba aparece como parceria de turismo confirmada. Os demais destinos
+não são apresentados como viagens patrocinadas.
+
 IDENTIDADE VISUAL
-- Cor principal: marfim quente
-- Textos e fundos escuros: café profundo
-- Botões e detalhes: terracota
-- Fundos auxiliares: areia, rosé suave e branco quente
+- Fundo principal: marfim claro
+- Cor editorial de Viagens: verde oliva profundo
+- Destaques: terracota suave
+- Fundos auxiliares: areia e branco quente
+- Tipografia de Viagens: serifada, elegante e com linguagem de revista
 
 LOGOTIPOS
 Os símbolos oficiais de FotoRegistro, Tour Curitiba e Real Seguro Viagem estão em
