@@ -1,0 +1,32 @@
+DIAARIO DA DUDA — SITE FINAL ATUALIZADO
+
+COMO ABRIR
+1. Extraia todo o conteúdo do arquivo ZIP.
+2. Abra a pasta completa no VS Code.
+3. Abra index.html no navegador ou use a extensão Live Server.
+
+ESTRUTURA
+- index.html: página inicial
+- viagens.html: viagens realizadas e agenda de 2026
+- moda.html: looks autorais da Duda
+- ugc.html: UGC, colaborações e OMeuChip
+- hospitalidade.html: hospedagens, gastronomia e experiências
+- sobre.html: apresentação da Duda
+- parcerias.html: redirecionamento de compatibilidade para UGC
+- css/style.css: estilos, responsividade e temas claro/escuro
+- js/script.js: idiomas, navegação e reprodução dos vídeos
+- assets/media: 30 vídeos originais
+- assets/posters: capas em alta resolução para todos os vídeos
+- assets/covers: capas exclusivas das quatro áreas da Home
+
+IDIOMAS E TEMA
+O site abre em português. No topo, PT, EN e ES permitem trocar o idioma.
+O botão de lua/sol alterna entre os modos claro e escuro.
+
+O MEU CHIP
+Cupom: DIAARIODADUDA
+Desconto: 15%
+Link: https://omeuchip.com/?ref=MARIAEDUARDA
+
+CONTATO
+dudabb2003@gmail.com

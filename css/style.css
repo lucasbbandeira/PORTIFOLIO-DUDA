@@ -157,6 +157,8 @@ main { width: 100%; min-width: 0; }
 .affiliate-section > div > strong { margin: 1rem 0; padding: .7rem 1rem; border: 1px dashed var(--accent); color: var(--accent); font-size: 1.1rem; letter-spacing: .12em; }
 .affiliate-section > div > small { max-width: 600px; margin-top: 1rem; color: var(--muted); font-size: .67rem; line-height: 1.5; }
 .affiliate-section .video-gallery { grid-template-columns: 1fr; }
+.affiliate-section--ugc { background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 12%, var(--surface)), var(--surface) 56%); }
+.affiliate-section--ugc .video-gallery { width: min(100%, 430px); justify-self: end; }
 
 .fashion-intro { display: grid; grid-template-columns: minmax(300px, .8fr) minmax(0, 1fr); align-items: stretch; background: var(--surface); }
 .fashion-intro > img { width: 100%; height: min(780px, 82vh); object-fit: cover; object-position: center 35%; }
@@ -279,7 +281,8 @@ main { width: 100%; min-width: 0; }
 }
 
 @media (max-width: 420px) {
-  .site-brand { max-width: 116px; }
+  .site-header { column-gap: .35rem; }
+  .site-brand { max-width: none; overflow: visible; font-size: .82rem; letter-spacing: .02em; text-overflow: clip; }
   .language-switcher button { width: 29px; }
   .theme-toggle, .menu-button { width: 32px; height: 32px; }
   .home-hero-copy h1 { font-size: 6.2rem; }
